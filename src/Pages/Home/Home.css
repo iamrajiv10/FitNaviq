@@ -1,0 +1,63 @@
+.main-content {
+  text-align: center;
+  min-height: "80vh";
+  /* margin-top: 50px; */
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.motto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 20px;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.notify {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.notify input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.notify button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -68,3 +68,61 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+///////////////////////////////////////////// Forlder Structure \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+my‑website/
+│
+├─ public/                     # Static assets copied to the final build verbatim
+│  ├─ index.html               # The single entry HTML
+│  └─ favicon.svg
+│
+├─ src/
+│  ├─ assets/                  # **All images, video, PDF, etc. live here**
+│  │  ├─ images/
+│  │  ├─ icons/
+│  │  └─ fonts/
+│  │
+│  ├─ components/              # Truly reusable, presentation‑only pieces
+│  │  ├─ Header/
+│  │  │  ├─ Header.tsx
+│  │  │  ├─ NavLink.tsx
+│  │  │  └─ Header.module.scss
+│  │  ├─ Footer/
+│  │  │  ├─ Footer.tsx
+│  │  │  └─ Footer.module.scss
+│  │  └─ …                     # Button, Card, etc.
+│  │
+│  ├─ layouts/                 # Route‑level skeletons (Header + Outlet + Footer)
+│  │  └─ MainLayout.tsx
+│  │
+│  ├─ pages/                   # One folder per **route** (lazy‑loaded chunks)
+│  │  ├─ Home/
+│  │  │  └─ Home.tsx
+│  │  ├─ ContactUs/
+│  │  │  └─ ContactUs.tsx
+│  │  └─ Features/
+│  │     └─ Features.tsx
+│  │
+│  ├─ routes/                  # All <Route> definitions, split out for clarity
+│  │  └─ AppRoutes.tsx
+│  │
+│  ├─ context/                 # React Contexts + providers (e.g., Theme, Auth)
+│  │  └─ ThemeProvider.tsx
+│  │
+│  ├─ hooks/                   # Reusable custom hooks
+│  │  └─ useWindowSize.ts
+│  │
+│  ├─ utils/                   # Pure utility helpers/constants
+│  │  └─ constants.ts
+│  │
+│  ├─ styles/                  # Global styles, variables, resets
+│  │  ├─ _variables.scss
+│  │  └─ globals.scss
+│  │
+│  ├─ App.tsx                  # Root component: mounts MainLayout + routes
+│  └─ main.tsx                 # Vite/ReactDOM bootstrap
+│
+|
+├─ package.json
+└─ README.md
